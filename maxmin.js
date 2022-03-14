@@ -1,3 +1,9 @@
+function getArray () {
+  let theArray = []
+  let userArray = prompt('enter numbers with a comma').split(',').map(Number)
+return userArray
+ }
+
 function minMax(arr) {
   let max = arr[0];
   let min = arr[0];
@@ -11,4 +17,4 @@ function minMax(arr) {
   return [max, min];
 }
 
-console.log(minMax([2, 5, 8, 10, 4, 3, 1]));
+console.log(minMax(getArray()));
