@@ -1,5 +1,4 @@
 function getArray () {
-  let theArray = []
   let userArray = prompt('enter numbers with a comma').split(',').map(Number)
 return userArray
  }
